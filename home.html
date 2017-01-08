@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <title>VNIT T&P.html</title>
+    <title>VNIT T&P</title>
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -45,9 +45,9 @@
     }
     .well1 {
       min-height: 20px;
-      padding-left: : 15px;
-      padding-right: : 15px;
-      padding-bottom: : 15px;
+      padding-left : 15px;
+      padding-right : 15px;
+      padding-bottom: 15px;
       margin-bottom: 20px;
       background-color:  #f5f5f5; /* #d9edf7; */
       border: 1px solid #e3e3e3;
@@ -57,7 +57,7 @@
     table{ /*no use */
       width:100%;
       border-radius: 10px;
-      margin: solid 1px red;
+      /*margin: solid 1px red;*/
       }
 
     .logo{
@@ -71,26 +71,30 @@
 
     }
 
-      header h1 a,header h1 a:hover {
+      header > h1 > strong > b{
         color: #990;
         font-size: 1.5em;
         padding-top:0px;
         letter-spacing:0px;
-        /*border-bottom:none ; */
+
         display: block;
         text-align: center;
 
     }
-      header h1 a b{
+      header h1 b{
         font-weight:normal;
-        color: #759;
+        color: #759; !important;
 
       }
 
-    header h1 a strong {
+    header h1 strong {
     	font-weight:normal;
     	color: #2A5BBB;
     }
+    header{
+        text-align: center;
+    }
+
     .vnit{
       color:white;
       text-align: center;
@@ -100,7 +104,7 @@
       padding-top:0px;
       }
 
-      marquee {
+      .fonty {
         background: #fff;
         font-family:inherit;
         font-size: 1.3em;
@@ -113,7 +117,7 @@
   <body>
   <!--  <link rel="stylesheet" href="css/font-awesome.css"> and this doesnt work -->
 
-    <div class="container1">
+    <div class="container-fluid">
     <div class=" well1 ">
         <table class="fonty">
 
@@ -121,7 +125,7 @@
             <header>
             <div class="logo"><img src="images/vnitLogo_low - Copy.png" width="100%" height="100px"></div>
             <div class="back">
-              <h1><a>Training <b>&</b><strong> Placement</strong></a></h1>
+              <h1><strong><b>Training </b></strong><b style="color: #990">&</b><strong> Placements</strong></h1>
               <div class="vnit">Visvesvaraya National Institute of Technology, Nagpur-442201</div>
             </div>
             <div class="logo"><img src="images/vnitLogo_low - Copy.png" width="100%" height="100px"></div>

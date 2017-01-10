@@ -16,5 +16,19 @@ $(document).ready(function(){
       $li.addClass("open");
     }
   });
-  
+
 });
+
+function validateForm()
+{
+  var pass =  document.getElementById('pass').value;
+  var reenter = document.getElementById('reenter_pass').value;
+  if(pass.length<6){
+    alert("Password should be atleast 6 letters long!!");
+    return false;
+  }
+  else if(pass!=reenter){
+    alert("Passwords do not match!!");
+    return false;
+  }
+}

@@ -51,7 +51,7 @@
                          </a>
                          <!-- Sub menu -->
                        </li>
-
+                         <!ul style="display: block;">
                             <li class="submenu">
                               <a href="#">
                                 <i class="glyphicon glyphicon-list"></i> Management
@@ -90,9 +90,9 @@
 		  	<div class="row">
 		  		<div class="col-md-12 panel-warning">
 		  			<div class="content-box-header panel-heading">
-	  					<div class="panel-title " id="title">Goldman Sachs</div>
+	  					<div class="panel-title " id="title">Your Profile</div>
 
-						<div class="panel-options">
+						<div class="panel-options" style="z-index: 5">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i></a>
               <ul class="dropdown-menu animated fadeInUp" style="position: relative">
                 <li><a href="edit_prof.html">Edit Profile</a></li>
@@ -101,18 +101,76 @@
               </ul>
 						</div>
 		  			</div>
+            <form>
 		  			<div class="content-box-large box-with-header" id="info">
-			  			<p><b>Company Info:</b></p>
-              <br><br>
-              <p><b>Location:</b></p>
-              <br><br>
-              <p><b>Stipend/Salary:</b></p>
-              <br><br>
-              <p><b>Important Dates:</b></p>
-              <br><br>
-              <a href="app_form.html">
-                <input class="btn btn-primary signup" type="button" style="float: right" value="Apply">
-              </a>
+              <div class="row">
+                <div class="col-xm-2 col-md-2">
+			  			    <b>Name</b>
+                </div>
+                <div class="col-xm-1 col-md-1">
+			  			    <b>:</b>
+                </div>
+              <div class="col-xm-7 col-md-7">
+                  <input class="form-control" type="text" style="width: 40%; display:inline-block; margin-bottom: 10px" id="name" disabled>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xm-2 col-md-2">
+                <b>Branch</b>
+              </div>
+              <div class="col-xm-1 col-md-1">
+                <b>:</b>
+              </div>
+            <div class="col-xm-7 col-md-7">
+                <input class="form-control" type="text" style="width: 40%; display:inline-block; margin-bottom: 10px" id="branch" disabled>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-xm-2 col-md-2">
+                <b>Enrollment Number</b>
+              </div>
+              <div class="col-xm-1 col-md-1">
+                <b>:</b>
+              </div>
+              <div class="col-xm-7 col-md-7">
+                <input class="form-control" type="text" style="width: 40%; display:inline-block; margin-bottom: 10px" id="enr_no" disabled>
+              </div>
+            </div>
+        <div class="row">
+          <div class="col-xm-2 col-md-2">
+            <b>ID Number</b>
+          </div>
+          <div class="col-xm-1 col-md-1">
+            <b>:</b>
+          </div>
+        <div class="col-xm-7 col-md-7">
+            <input class="form-control" type="number" style="width: 40%; display:inline-block; margin-bottom: 10px" id="id_no" disabled>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xm-2 col-md-2 ">
+          <b>CGPA</b>
+        </div>
+        <div class="col-xm-1 col-md-1">
+          <b>:</b>
+        </div>
+      <div class="col-xm-7 col-md-7">
+          <input class="form-control" type="number" style="width: 40%; display:inline-block; margin-bottom: 10px" id="cgpa">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xm-2 col-md-2">
+        <b>Motto</b>
+      </div>
+      <div class="col-xm-1 col-md-1">
+        <b>:</b>
+      </div>
+      <div class="col-xm-7 col-md-7">
+        <input class="form-control" type="text" style="width: 40%; display:inline-block; margin-bottom: 10px" id="motto">
+      </div>
+    </div>
+              <input class="btn btn-primary signup" type="button" style="float: right" value="Save Changes">
+            </form>
 					</div>
 		  		</div>
 		  	</div>
